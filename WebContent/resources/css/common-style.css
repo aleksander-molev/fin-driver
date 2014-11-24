@@ -1,0 +1,119 @@
+body
+{
+   background: #3c3c3c url('images/hasky.png') no-repeat;
+   -moz-background-size: 100%; /* Firefox 3.6+ */
+   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+   -o-background-size: 100%; /* Opera 9.6+ */
+   background-size: 100%; /* Современные браузеры */
+}
+#page
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#header
+{
+	width: 100%;
+	height:150px;
+	background: url('images/header-bg.png') repeat-x;
+	margin-bottom:16px;
+    }
+	.logoType{
+		float: left;
+		margin: 0 0 5px 5px
+	}
+	       
+	 
+
+#body
+{
+	width: 550px;
+	height:800px;
+	background: url('images/content-bg.png') repeat;
+	border-radius: 15px 15px 1px 1px;
+	margin-right:1px;
+	margin-bottom:1px;
+	border: 1px solid #5e5d5d;
+	border-style:solid;
+}
+
+#footer
+{
+	width: 70%;
+	height:150px;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+.MainTable
+{
+	border:1px solid #000;
+	width:100%;
+	heigth:100%;
+}
+
+#products
+{
+    border: 2px solid #FF0000;
+    width:99.5%;
+    height:700px;
+}
+
+#goods
+{
+    border: 1px solid #505050;
+    width: 250px;
+    height:300px;
+    margin: 20px;
+}
+
+#goods .title
+{
+    color: white;
+    margin-top: 10px;
+    font-size:14px; 
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:21px;
+    text-shadow: 1px 1px 1px #000;
+    text-align:center;
+}
+
+#goods .photo
+{
+   margin: 15px 0px 5px 0px;
+}
+#goods #price
+{
+    color: #C00000;
+    font-size: 20px;
+    font-style: bold;
+    margin-top: 10px;
+}
+
+#goods #buy
+{
+   margin-top: 10px;
+   height:30px;
+   background: url('images/dark-grey-button.png') no-repeat center;
+}
+#goods #buy:hover
+{
+   margin-top: 10px;
+   height:30px;
+   background: url('images/buy_hover.png') no-repeat center;
+}
+#goods #basket
+{
+   width:150px;
+   height:30px;
+   margin-top: 10px;
+   background: url('images/to-basket.png') no-repeat center;
+}
+#goods #basket:hover
+{
+   width:150px;
+   height:30px;
+   margin-top: 10px;
+   background: url('images/to-basket_hover.png') no-repeat center;
+}

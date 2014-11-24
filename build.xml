@@ -1,0 +1,42 @@
+           <project name="MyProject" default="all" >
+
+                 <target name="make.dirs" description="Make some dirs">
+                         <mkdir dir="WebContent/WEB-INF/classes"/>
+                         <!-- <mkdir dir="buildMy/class"/> -->
+                 </target>
+
+                <path id="myclasspath" >
+                         <fileset dir="WebContent/WEB-INF/lib">
+                                 <include name="**/*.jar"/>
+                         </fileset>
+                 </path>
+
+                 <target name="compile" description="compile java"  depends="make.dirs">
+                         <javac destdir="WebContent/WEB-INF/classes" classpathref="myclasspath">
+                                 <src path="src"/>
+                         </javac>
+                         <copyfile src="resources/messages_ru.properties" dest="WebContent/WEB-INF/classes/messages_ru.properties"/>
+                 </target>
+
+                 <target name="all" description="Do the build"  depends="compile"/>
+
+                 <target name="clean" description="clean up">
+                         <echo>========================</echo>
+                         <echo>*****Start cleaning*****</echo>
+                         <echo>========================</echo>
+                         <delete dir="WebContent/WEB-INF/classes"/>
+                 </target>
+ 
+                 <target name="build-war">
+                    <war destfile="fin-driver.war" webxml="WebContent/WEB-INF/web.xml">
+                       <fileset dir="WebContent/">
+                          <include name="**/*.*"/>
+                       </fileset>
+                       <lib dir="WebContent/WEB-INF/lib">
+                          <exclude name="portlet.jar"/>
+                       </lib>
+                       <classes dir="WebContent/WEB-INF/classes"/>
+                    </war>
+                 </target>
+
+           </project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      >
+ <h:head>
+    <title>ffff</title>
+ </h:head>
+ <h:body>
+    <h1>IN WEB-INF</h1>
+ <h:form>
+    <p>
+       <h:commandButton value="Run" action="Run"/>
+    </p>
+	<h:dataTable value="#{contactList}" var="o">
+	<h:column>
+		#{o.lastname}
+	</h:column>
+ 
+	<h:column>
+		#{o.email}
+	</h:column>
+ 
+	<h:column>
+		#{o.telephone}
+	</h:column>
+</h:dataTable>
+<h:outputText value="I'm fuck it!!!"/>
+ </h:form>
+   </h:body>
+</html>
