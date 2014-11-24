@@ -9,7 +9,7 @@ set server_unpacked_war=e:\apache-tomcat-6.0.37\webapps\CatHouse
 set server_war_path=e:\apache-tomcat-6.0.37\webapps\
 
 
-echo rewrite this as I need.
+echo rewrite this 
 
  
  echo ========================================================
